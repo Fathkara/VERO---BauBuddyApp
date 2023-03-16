@@ -23,7 +23,7 @@ This repository shows task list on BauBuddy API.
 - Alamofire
 - Lottie
 ## Preview:
-/Users/fatih/Downloads/BauBuddyApp.MP4
+https://files.fm/u/umebf7rty#/view/z34kuyfgb
 
 Hello dear iOS dev prospect!
 
