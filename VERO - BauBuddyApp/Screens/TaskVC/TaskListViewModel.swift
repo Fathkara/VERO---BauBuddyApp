@@ -28,7 +28,7 @@ enum UserDefaultsViewModelOutPut {
 
 protocol TaskListViewModelDelegate {
     func handlerOutput(output: TaskListViewModelOutPut)
-    func coreDataHandleOutPut(outPut: UserDefaultsViewModelOutPut)
+    func userDefaultsHandleOutPut(outPut: UserDefaultsViewModelOutPut)
 }
 
 class TaskListViewModel: TaskListViewModelProtocol {
@@ -71,7 +71,7 @@ extension TaskListViewModel {
     func fetchTaskData() {
         let model = userDefaultsManager?.fetchTask()
         if let modelData = model {
-            delegate?.coreDataHandleOutPut(outPut: .taskList(modelData))
+            delegate?.userDefaultsHandleOutPut(outPut: .taskList(modelData))
         }
        
     }
