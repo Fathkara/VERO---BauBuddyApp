@@ -21,25 +21,25 @@ enum TaskListViewModelOutPut {
     case error(String)
 }
 
-enum coreDataViewModelOutPut {
+enum UserDefaultsViewModelOutPut {
     case taskList([Task])
 
 }
 
 protocol TaskListViewModelDelegate {
     func handlerOutput(output: TaskListViewModelOutPut)
-    func coreDataHandleOutPut(outPut: coreDataViewModelOutPut)
+    func coreDataHandleOutPut(outPut: UserDefaultsViewModelOutPut)
 }
 
 class TaskListViewModel: TaskListViewModelProtocol {
     
     var delegate: TaskListViewModelDelegate?
     let service: TaskListServiceProtocol?
-    var coredataManager: CoreDataManagerProtocol?
+    var userDefaultsManager: UserDefaultsManagerProtocol?
     
-    init(service: TaskListServiceProtocol, coredataManager: CoreDataManagerProtocol){
+    init(service: TaskListServiceProtocol, userDefaultsManager: UserDefaultsManagerProtocol){
         self.service = service
-        self.coredataManager = coredataManager
+        self.userDefaultsManager = userDefaultsManager
     }
 }
 
@@ -61,15 +61,15 @@ extension TaskListViewModel {
     }
     
     func taskSaveData(value: [Task]) {
-        coredataManager?.addTask(value: value)
+        userDefaultsManager?.addTask(value: value)
     }
     
     func deleteTaskData() {
-        coredataManager?.deleteTask()
+        userDefaultsManager?.deleteTask()
     }
     
     func fetchTaskData() {
-        let model = coredataManager?.fetchTask()
+        let model = userDefaultsManager?.fetchTask()
         if let modelData = model {
             delegate?.coreDataHandleOutPut(outPut: .taskList(modelData))
         }

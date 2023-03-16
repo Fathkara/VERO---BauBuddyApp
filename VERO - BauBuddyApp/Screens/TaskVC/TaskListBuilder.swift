@@ -9,7 +9,7 @@ import Foundation
 class TaskListBuilder {
     static func make() -> TaskListVC {
         let vc = TaskListVC()
-        let viewModel = TaskListViewModel(service: APIHandler(), coredataManager: UserDefaultsManager())
+        let viewModel = TaskListViewModel(service: APIHandler(), userDefaultsManager: UserDefaultsManager())
         vc.viewModel = viewModel
         return vc
     }

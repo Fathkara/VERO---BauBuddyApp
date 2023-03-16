@@ -140,7 +140,7 @@ extension TaskListVC: TaskListViewModelDelegate {
         }
     }
     
-    func coreDataHandleOutPut(outPut: coreDataViewModelOutPut) {
+    func coreDataHandleOutPut(outPut: UserDefaultsViewModelOutPut) {
         switch outPut {
         case .taskList(let task):
             print(task)

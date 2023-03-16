@@ -7,13 +7,13 @@
 
 import UIKit
 import CoreData
-protocol CoreDataManagerProtocol {
+protocol UserDefaultsManagerProtocol {
     func addTask(value: [Task])
     func deleteTask()
     func fetchTask() -> [Task]
 }
 
-class UserDefaultsManager: CoreDataManagerProtocol {
+class UserDefaultsManager: UserDefaultsManagerProtocol {
     let userDefaults = UserDefaults.standard
     let taskKey = "taskList"
 
