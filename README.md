@@ -1,3 +1,28 @@
+# Vero - BauBuddyApp
+
+This repository shows task list on BauBuddy API.
+
+## Features of the application
+- Resource Request
+- Data Storage
+- Fetching and listing datas using GET request after login to the site using POST request 
+- Searching datas 
+- Scanning QR codes
+- Refreshing datas
+
+## Used technologies
+- MVVM Design Pattern
+- URLSession
+- UserDefaults
+- UIKit
+- Extensions
+- AVFoundation
+- UITableView
+- UISearchBar
+- SnapKit
+- Alamofire
+- Lottie
+
 Hello dear iOS dev prospect!
 
 This repository is supposed to act as a playground for your submission.
