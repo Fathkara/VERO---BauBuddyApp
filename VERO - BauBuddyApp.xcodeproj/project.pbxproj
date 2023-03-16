@@ -15,6 +15,19 @@
 		3D43C0BA29C1F5C200EC4757 /* APIHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D43C0B929C1F5C200EC4757 /* APIHandler.swift */; };
 		3D43C0BC29C1F5E300EC4757 /* Oauth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D43C0BB29C1F5E300EC4757 /* Oauth.swift */; };
 		3D43C0BE29C1F5EB00EC4757 /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D43C0BD29C1F5EB00EC4757 /* Task.swift */; };
+		3D43C0C029C3094900EC4757 /* TaskListBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D43C0BF29C3094900EC4757 /* TaskListBuilder.swift */; };
+		3D43C0C229C3096300EC4757 /* TaskListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D43C0C129C3096300EC4757 /* TaskListViewModel.swift */; };
+		3D43C0C429C309BB00EC4757 /* UserDefaultsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D43C0C329C309BB00EC4757 /* UserDefaultsManager.swift */; };
+		3D43C0C729C30A3E00EC4757 /* TaskListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D43C0C629C30A3E00EC4757 /* TaskListCell.swift */; };
+		3D43C0CA29C30A6500EC4757 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 3D43C0C929C30A6500EC4757 /* SnapKit */; };
+		3D43C0CD29C30A7700EC4757 /* SwiftHEXColors in Frameworks */ = {isa = PBXBuildFile; productRef = 3D43C0CC29C30A7700EC4757 /* SwiftHEXColors */; };
+		3D43C0D029C30A8B00EC4757 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 3D43C0CF29C30A8B00EC4757 /* Alamofire */; };
+		3D43C0D229C30AB000EC4757 /* TaskListConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D43C0D129C30AB000EC4757 /* TaskListConstant.swift */; };
+		3D43C0D429C30AFE00EC4757 /* NetworkConnect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D43C0D329C30AFE00EC4757 /* NetworkConnect.swift */; };
+		3D43C0D629C30B6100EC4757 /* QRScannerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D43C0D529C30B6100EC4757 /* QRScannerVC.swift */; };
+		3D43C0D829C30B9D00EC4757 /* CGFloat + Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D43C0D729C30B9D00EC4757 /* CGFloat + Ext.swift */; };
+		3D43C0DB29C30BD600EC4757 /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = 3D43C0DA29C30BD600EC4757 /* Lottie */; };
+		3D43C0DD29C30BF000EC4757 /* loading.json in Resources */ = {isa = PBXBuildFile; fileRef = 3D43C0DC29C30BF000EC4757 /* loading.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +41,15 @@
 		3D43C0B929C1F5C200EC4757 /* APIHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIHandler.swift; sourceTree = "<group>"; };
 		3D43C0BB29C1F5E300EC4757 /* Oauth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Oauth.swift; sourceTree = "<group>"; };
 		3D43C0BD29C1F5EB00EC4757 /* Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
+		3D43C0BF29C3094900EC4757 /* TaskListBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskListBuilder.swift; sourceTree = "<group>"; };
+		3D43C0C129C3096300EC4757 /* TaskListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskListViewModel.swift; sourceTree = "<group>"; };
+		3D43C0C329C309BB00EC4757 /* UserDefaultsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsManager.swift; sourceTree = "<group>"; };
+		3D43C0C629C30A3E00EC4757 /* TaskListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskListCell.swift; sourceTree = "<group>"; };
+		3D43C0D129C30AB000EC4757 /* TaskListConstant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskListConstant.swift; sourceTree = "<group>"; };
+		3D43C0D329C30AFE00EC4757 /* NetworkConnect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkConnect.swift; sourceTree = "<group>"; };
+		3D43C0D529C30B6100EC4757 /* QRScannerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRScannerVC.swift; sourceTree = "<group>"; };
+		3D43C0D729C30B9D00EC4757 /* CGFloat + Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGFloat + Ext.swift"; sourceTree = "<group>"; };
+		3D43C0DC29C30BF000EC4757 /* loading.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = loading.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,6 +57,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3D43C0D029C30A8B00EC4757 /* Alamofire in Frameworks */,
+				3D43C0CD29C30A7700EC4757 /* SwiftHEXColors in Frameworks */,
+				3D43C0CA29C30A6500EC4757 /* SnapKit in Frameworks */,
+				3D43C0DB29C30BD600EC4757 /* Lottie in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,7 +94,6 @@
 				3D43C0B429C1F4CC00EC4757 /* Manager */,
 				3D43C0B329C1F4C600EC4757 /* Network */,
 				3D43C0B629C1F4DE00EC4757 /* Screens */,
-				3D43C0A129C1F48300EC4757 /* TaskListVC.swift */,
 			);
 			path = "VERO - BauBuddyApp";
 			sourceTree = "<group>";
@@ -76,6 +101,7 @@
 		3D43C0B129C1F4B600EC4757 /* Constants */ = {
 			isa = PBXGroup;
 			children = (
+				3D43C0D129C30AB000EC4757 /* TaskListConstant.swift */,
 			);
 			path = Constants;
 			sourceTree = "<group>";
@@ -100,6 +126,7 @@
 		3D43C0B429C1F4CC00EC4757 /* Manager */ = {
 			isa = PBXGroup;
 			children = (
+				3D43C0C329C309BB00EC4757 /* UserDefaultsManager.swift */,
 			);
 			path = Manager;
 			sourceTree = "<group>";
@@ -107,6 +134,8 @@
 		3D43C0B529C1F4D500EC4757 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				3D43C0D329C30AFE00EC4757 /* NetworkConnect.swift */,
+				3D43C0D729C30B9D00EC4757 /* CGFloat + Ext.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -114,6 +143,9 @@
 		3D43C0B629C1F4DE00EC4757 /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				3D43C0DE29C30C1A00EC4757 /* TaskVC */,
+				3D43C0DF29C30C2E00EC4757 /* QRScannerVC */,
+				3D43C0C529C30A1900EC4757 /* Cell */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -132,9 +164,36 @@
 			children = (
 				3D43C0AB29C1F48400EC4757 /* Info.plist */,
 				3D43C0A829C1F48400EC4757 /* LaunchScreen.storyboard */,
+				3D43C0DC29C30BF000EC4757 /* loading.json */,
 				3D43C0A629C1F48400EC4757 /* Assets.xcassets */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		3D43C0C529C30A1900EC4757 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				3D43C0C629C30A3E00EC4757 /* TaskListCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		3D43C0DE29C30C1A00EC4757 /* TaskVC */ = {
+			isa = PBXGroup;
+			children = (
+				3D43C0BF29C3094900EC4757 /* TaskListBuilder.swift */,
+				3D43C0C129C3096300EC4757 /* TaskListViewModel.swift */,
+				3D43C0A129C1F48300EC4757 /* TaskListVC.swift */,
+			);
+			path = TaskVC;
+			sourceTree = "<group>";
+		};
+		3D43C0DF29C30C2E00EC4757 /* QRScannerVC */ = {
+			isa = PBXGroup;
+			children = (
+				3D43C0D529C30B6100EC4757 /* QRScannerVC.swift */,
+			);
+			path = QRScannerVC;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -153,6 +212,12 @@
 			dependencies = (
 			);
 			name = "VERO - BauBuddyApp";
+			packageProductDependencies = (
+				3D43C0C929C30A6500EC4757 /* SnapKit */,
+				3D43C0CC29C30A7700EC4757 /* SwiftHEXColors */,
+				3D43C0CF29C30A8B00EC4757 /* Alamofire */,
+				3D43C0DA29C30BD600EC4757 /* Lottie */,
+			);
 			productName = "VERO - BauBuddyApp";
 			productReference = 3D43C09A29C1F48300EC4757 /* VERO - BauBuddyApp.app */;
 			productType = "com.apple.product-type.application";
@@ -181,6 +246,12 @@
 				Base,
 			);
 			mainGroup = 3D43C09129C1F48300EC4757;
+			packageReferences = (
+				3D43C0C829C30A6500EC4757 /* XCRemoteSwiftPackageReference "SnapKit" */,
+				3D43C0CB29C30A7700EC4757 /* XCRemoteSwiftPackageReference "SwiftHEXColors" */,
+				3D43C0CE29C30A8B00EC4757 /* XCRemoteSwiftPackageReference "Alamofire" */,
+				3D43C0D929C30BD600EC4757 /* XCRemoteSwiftPackageReference "lottie-ios" */,
+			);
 			productRefGroup = 3D43C09B29C1F48300EC4757 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -195,6 +266,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3D43C0DD29C30BF000EC4757 /* loading.json in Resources */,
 				3D43C0AA29C1F48400EC4757 /* LaunchScreen.storyboard in Resources */,
 				3D43C0A729C1F48400EC4757 /* Assets.xcassets in Resources */,
 			);
@@ -208,9 +280,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				3D43C0A229C1F48300EC4757 /* TaskListVC.swift in Sources */,
+				3D43C0D429C30AFE00EC4757 /* NetworkConnect.swift in Sources */,
 				3D43C09E29C1F48300EC4757 /* AppDelegate.swift in Sources */,
+				3D43C0D629C30B6100EC4757 /* QRScannerVC.swift in Sources */,
 				3D43C0A029C1F48300EC4757 /* SceneDelegate.swift in Sources */,
 				3D43C0BA29C1F5C200EC4757 /* APIHandler.swift in Sources */,
+				3D43C0D229C30AB000EC4757 /* TaskListConstant.swift in Sources */,
+				3D43C0C029C3094900EC4757 /* TaskListBuilder.swift in Sources */,
+				3D43C0D829C30B9D00EC4757 /* CGFloat + Ext.swift in Sources */,
+				3D43C0C429C309BB00EC4757 /* UserDefaultsManager.swift in Sources */,
+				3D43C0C729C30A3E00EC4757 /* TaskListCell.swift in Sources */,
+				3D43C0C229C3096300EC4757 /* TaskListViewModel.swift in Sources */,
 				3D43C0BE29C1F5EB00EC4757 /* Task.swift in Sources */,
 				3D43C0BC29C1F5E300EC4757 /* Oauth.swift in Sources */,
 			);
@@ -420,6 +500,64 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		3D43C0C829C30A6500EC4757 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+		3D43C0CB29C30A7700EC4757 /* XCRemoteSwiftPackageReference "SwiftHEXColors" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/thii/SwiftHEXColors.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+		3D43C0CE29C30A8B00EC4757 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+		3D43C0D929C30BD600EC4757 /* XCRemoteSwiftPackageReference "lottie-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/airbnb/lottie-ios";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		3D43C0C929C30A6500EC4757 /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3D43C0C829C30A6500EC4757 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+		3D43C0CC29C30A7700EC4757 /* SwiftHEXColors */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3D43C0CB29C30A7700EC4757 /* XCRemoteSwiftPackageReference "SwiftHEXColors" */;
+			productName = SwiftHEXColors;
+		};
+		3D43C0CF29C30A8B00EC4757 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3D43C0CE29C30A8B00EC4757 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+		3D43C0DA29C30BD600EC4757 /* Lottie */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3D43C0D929C30BD600EC4757 /* XCRemoteSwiftPackageReference "lottie-ios" */;
+			productName = Lottie;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 3D43C09229C1F48300EC4757 /* Project object */;
 }
