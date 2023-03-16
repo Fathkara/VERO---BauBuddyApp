@@ -44,18 +44,18 @@ class TaskListVC: UIViewController {
     private var isSearch = false
     private var filteredData : [Task] = []
     private var refreshControl = UIRefreshControl()
+    private var networkStatus: UIBarButtonItem!
 
     
     //MARK: Life Cycle
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-       
         initDelegate()
-        networkConnected()
-        //viewModel?.load()
 
+    }
+    override func viewWillAppear(_ animated: Bool) {
+        networkConnected()
     }
     
     //MARK: Private func
@@ -79,8 +79,8 @@ class TaskListVC: UIViewController {
         view.addSubview(animationView)
         self.taskListTableView.addSubview(refreshControl)
         navigationController?.navigationBar.topItem?.rightBarButtonItem = UIBarButtonItem(image: UIImage(systemName: "qrcode.viewfinder"), style: .plain, target: self, action: #selector(rightButtonTapped))
-        
-        
+        networkStatus = UIBarButtonItem(title: "", style: .done, target: nil, action: nil)
+        navigationItem.leftBarButtonItem = networkStatus
         configureConstraints()
         createRefresh()
     }
@@ -88,8 +88,12 @@ class TaskListVC: UIViewController {
     private func networkConnected() {
         if Connect.isConnected() {
             viewModel?.load()
+            taskListTableView.reloadData()
+            networkStatus.title = ""
         }else{
             viewModel?.fetchTaskData()
+            taskListTableView.reloadData()
+            networkStatus.title = "Offline!"
         }
     }
     
@@ -104,6 +108,7 @@ class TaskListVC: UIViewController {
             self.taskListTableView.refreshControl?.endRefreshing()
         }
         viewModel?.taskSaveData(value: taskList)
+        networkConnected()
     }
   
     
