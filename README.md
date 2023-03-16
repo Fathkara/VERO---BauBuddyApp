@@ -22,6 +22,8 @@ This repository shows task list on BauBuddy API.
 - SnapKit
 - Alamofire
 - Lottie
+## Preview:
+/Users/fatih/Downloads/BauBuddyApp.MP4
 
 Hello dear iOS dev prospect!
 

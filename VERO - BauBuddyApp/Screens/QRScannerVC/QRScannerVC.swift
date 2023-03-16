@@ -19,9 +19,6 @@ protocol QRScannnerDelegate {
 }
 
 class QRScannnerVC: UIViewController, QRScannnerProtocol {
-  
-    
-    
     var captureSession = AVCaptureSession()
     var previewLayer : AVCaptureVideoPreviewLayer?
     var qrCodeFrame = UIView()
@@ -53,7 +50,7 @@ class QRScannnerVC: UIViewController, QRScannnerProtocol {
         }
     }
     
-    func startQRScanner() {
+    private func startQRScanner() {
         let captureDevice = AVCaptureDevice.default(for: .video)
         
         do {
@@ -81,7 +78,7 @@ class QRScannnerVC: UIViewController, QRScannnerProtocol {
         configureQRFrame()
         
     }
-    func configureQRFrame() {
+    private func configureQRFrame() {
         qrCodeFrame.layer.borderColor = UIColor.green.cgColor
         qrCodeFrame.layer.borderWidth = 2.0
         view.addSubview(qrCodeFrame)
@@ -108,7 +105,7 @@ extension QRScannnerVC : AVCaptureMetadataOutputObjectsDelegate {
             guard let stringValue = readableObject.stringValue else { return }
             AudioServicesPlaySystemSound(SystemSoundID(kSystemSoundID_Vibrate))
             self.searchTextOR(text: stringValue)
-            //handleQRCodeScan(result: stringValue)
+
         }
         if metadataObject.type == .qr {
             
